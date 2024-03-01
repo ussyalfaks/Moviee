@@ -113,7 +113,6 @@ function Trailer() {
               <div className="overview">
                 <p>{movieDetails.overview}</p>
               </div>
-
               <div className="toprated">
                 <span>Top rated movie #{movieDetails.vote_average}</span>
                 <span>{movieDetails.vote_count} votes</span>
