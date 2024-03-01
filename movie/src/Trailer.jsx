@@ -1,8 +1,8 @@
 import React from "react";
 // import Poster from './asset/images/Poster.png';
 import logo from './asset/images/logo1.png';
-import Ticket from './asset/images/Tickets.png';
-import List from './asset/images/List.png';
+// import Ticket from './asset/images/Tickets.png';
+// import List from './asset/images/List.png';
 // import PIC from './asset/images/pic1.jpg';
 import './Trailer.css';
 import { Link } from 'react-router-dom';
