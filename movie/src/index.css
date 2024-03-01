@@ -1,0 +1,465 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 100%;
+  height: 700px;
+  background-image: url(./asset/images/Poster.png);
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  margin: 0 20px;
+}
+
+.search {
+  border: 2px solid rgba(209, 213, 219, 1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  max-width: 525px;
+}
+
+.btn-search {
+  border: none;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  width: 95%;
+  color: white;
+  outline: none;
+  height: 36px;
+}
+
+.search-img {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  width: 5%;
+  padding-right: 10px;
+}
+
+.btn-search::placeholder {
+  text-align: left;
+  font-family: 'DM Sans', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.sign-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign-box h2 {
+  color: white;
+}
+
+
+
+
+/* moviedetail-pagination */
+#moviedetail-pagination{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* background-color: red; */
+  height: 85%;
+}
+
+/* DESCRIPTION BOX */
+#discription-box {
+margin: 80px 0px 0px 98px;
+display: flex;
+flex-Direction: column;
+justify-Content: flex-start;
+align-Items: flex-start;
+padding: 0px;
+box-Sizing: border-box;
+height: 275px;
+width: 404px;
+}
+#discription-box .movietittle{
+      color: white;
+      text-align: left;
+    font-Style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    }
+ .moviedetailsheader{
+  color: white;
+  font-size: 16px;
+  width: 302px;
+  height: 72px;
+  line-height: 18px;
+  font-weight: 500;
+  word-break: break-word;
+  
+}
+
+/* RATING */
+.rating{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  width: 184px;
+  height: 17px;
+  flex-direction: row;
+  margin: 30px 0;
+}
+/* .imdb-img, .tomato-img{
+  height: 17px;
+  width: 35px;
+  margin: 0;
+} */
+.imdb-icon, .tomato-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:center;
+  gap: 10px;
+}
+.imdb-icon p, .tomato-icon p{
+  color: white;
+  line-height: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+.btnheader {
+  display: flex; 
+  align-items: center; 
+  padding: 6px 16px;
+  background-color: rgba(190, 18, 60, 1);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 16px 0px 0px 0px;
+  
+ 
+}
+
+.play-icon {
+  width: 24px; 
+  height: 24px; 
+  margin-right: 10px;
+  font-size: 14;
+  font-family: 'DM Sans';
+  line-height: 24;
+  outline: none;
+  word-wrap: break-word;
+}
+
+/* pagination */
+#pagination{
+margin: 120px 10px 10px 0px;
+cursor: pointer;
+
+}
+#pagination ul li{
+  box-Sizing: border-box;
+  list-style: none;
+  padding:  3px ;
+  cursor: pointer;
+}
+.q1, .q2,.q4,.q5{
+  color: rgba(156, 163, 175, 1);
+  font-size: 14px;
+}
+.q3{
+  color: white;
+  font-size: 16;
+}
+
+/* FEATURED AND SEE MORE */
+.featured-explore{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 80px;
+}
+.featured p {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+
+}
+.seemore{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.seemore p{
+  color: rgba(190, 18, 60, 1);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* CARD CONTAINER */
+ /* .layout {
+  margin: auto;
+  width: 90%;
+  max-width: 1366px;
+  height: auto;
+  display: grid;
+  padding: 20px;
+  margin: 0% 6%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-content: center;
+  gap: 100px 50px;
+
+} */
+
+/* Container */
+.container-movie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.movie-container {
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+}
+
+.movie-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  /* Add your favorite icon SVG styling here */
+}
+
+.movie-title {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.imdb-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 5px 5px 0px;
+  font-size: 14px;
+}
+.imdb .tomato{
+  display: flex;
+}
+.imdb-icon, .tomato-icon {
+  width: 25px;
+  height: 20px;
+  margin-right: 5px;
+  /* Add IMDb and Tomato icon SVG styling here */
+}
+
+.tomato-icon {
+  width: 20px;
+  height: 20px;
+  /* Add Tomato icon SVG styling here */
+  margin-right: 5px;
+}
+/* Country and Year */
+.country-year {
+  color: #ccc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Title */
+.title {
+  width: 75%;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Ratings */
+.ratings-container {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: center;
+}
+
+.rating-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* gap: 1px; */
+  align-items: center;
+}
+
+/* .rating-icon {
+  width: 35px;
+  height: 17px;
+} */
+
+.rating-text {
+  color: #333;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 3;
+}
+
+/* Genres */
+.genres {
+  color: #ccc;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'DM Sans', sans-serif;
+}
+  @media (max-width: 768px) {
+    
+    nav {
+      flex-direction: column; 
+      padding: 5px; 
+    }
+    .logo-pic{
+      width: 150px;
+      height: 40px;
+    }
+    .search {
+      margin-top: 5px; 
+    }
+    .btn-search {
+      width: auto; 
+    }
+    .btn-search {
+      border: none;
+      background-color: transparent;
+      border-radius: 6px;
+      padding: 6px 10px;
+      box-sizing: border-box;
+      width: 95%;
+      color: white;
+      outline: none;
+      height: 36px;
+    }
+    
+    .search-img {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      padding-right: 10px;
+      width: 5%;
+    }
+    header{
+      background-image: url(./asset/images/Poster.png);
+      background-repeat: no-repeat;
+    }
+
+
+    #moviedetail-pagination{
+      margin-top: -20px;
+      margin-left: -20px;
+      width: 100%;
+
+    }
+
+    #discription-box {
+      margin: 70px 0px 0px 38px;
+      }
+      #discription-box .moviedetailsheader{
+        color: white;
+        font-size: 16px;
+        width: 290px;
+        height: 70px;
+        line-height: 18px;
+        font-weight: 500;
+        word-break: break-word;
+      }
+      #discription-box {
+        box-Sizing: border-box;
+        width: 100%;
+        height: auto;
+        }
+
+      #discription-box .movietittle{
+      font-size: 1em;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      }
+
+      #discription-box  .moviedetailsheader{
+        height: auto;
+        width: 100%;
+        
+      }
+      #pagination{
+        width: auto;
+        height: auto;
+        margin: 100px 0px 10px 0px;
+        
+        }
+
+        /* FEATURED AND SEE MORE */
+.featured-explore{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
+}
+.featured p {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+
+}
+.seemore{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.seemore p{
+  color: rgba(190, 18, 60, 1);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+  }

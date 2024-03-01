@@ -1,0 +1,277 @@
+
+.container-sidebar {
+    min-height: 100vh; 
+    overflow-y: auto; 
+    display: flex; 
+}
+
+.trailervid {
+    position: relative;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.play-button i {
+    color: white;
+    font-size: 40px;
+}
+
+
+/* Sidebar.css */
+.sidebar {
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color:rgb(112, 110, 115);
+  border-radius: 0px 50px 50px 0px;
+  background-color: #ffffff;
+  transition: left 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.sidebar-content {
+  padding: 10% 10% 10% 0;
+  color: #fff;
+}
+.sidebar-content h4{
+  color: #fff;
+}
+.logo-container{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.logo-container h2{
+  color: #3f3e3e;
+  font-size: 17px;
+  font-weight: 900;
+
+}
+.sidebar-content button a{
+  text-decoration: none;
+  color: #000000;
+}
+.sidebar-content .paragraphs{
+  color: #000000;
+  margin-top: 50px;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid rgba(190, 18, 60, 0.70);
+  padding: 0px 7px;
+  font-size: small;
+}
+.paragraphs p{
+  margin: 10px 0px;
+}
+.para-head{
+  font-size: 15px;
+  font-weight: 600;
+  
+}
+.paragraphs button{
+  border: 1px solid rgba(190, 18, 60, 0.70);
+  border-radius: 50px;
+  background-color: rgba(190, 18, 60, 0.20);
+}
+button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+.sidebar-content button{
+  margin-top: 47px;
+}
+.sidebar-content button:last-child{
+  margin-top: 20px;
+}
+.trailersection{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*position: fixed;*/
+    /* width: 90%; */
+    /* overflow-y: auto; */
+} 
+
+.trailervid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    height: auto;
+}
+.trailerimg{
+width: 100%;
+object-fit: cover;
+object-position: center top;
+height:30rem;
+border-radius: 30px;
+
+}
+
+.detailssection{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.sectionone{
+    width: 60%;
+    gap:10px;
+    margin-left: 20px;
+}
+.moviename{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.moviename span{
+    margin-right: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+.sec2 span{
+    margin-right: 20px;
+    border: 1px solid #F8E7EB;
+    color: #B91C1C;
+    font-size: 15px;
+    font-weight: 500; 
+    padding: 3px 18px;
+    border-radius: 20px;
+}
+
+.overview{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'poppins';
+    width: 100%;
+}
+.crew p{
+    /*margin: 30px 0px;*/
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 300;
+}
+.crew p span{
+    text-transform: capitalize;
+    color: #BE123C;
+}
+.toprated{
+    border: 2px solid whitesmoke;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+.toprated > span:first-child {
+    background-color: #BE123C;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 15px;
+    margin-right: 15px;
+    font-size:20px;
+    font-family: 'poppins,';
+}
+.toprated > span:nth-child(2){
+    color: #333333;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+
+.sectiontwo{
+    margin-right: 30px; 
+}
+.ratin{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+    flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.star-icon {
+  color: #FFD700; 
+  margin-right: 5px; 
+}
+.votes {
+  margin-top: 5px; 
+  font-size: 15px; 
+}
+
+.showtime button{
+    width: 100%;
+    text-transform: capitalize;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+.showtime button:first-child{
+    background-color: #BE123C;
+    color: white;
+}
+.showtime > button:nth-child(2){
+    background-color: rgba(190, 18, 60, 0.10);
+    border: 1px solid #BE123C;
+}
+.monthshow{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 70rem;
+}
+
+
+@media (max-width: 850px) {
+
+  .trailerimg{
+    width: 100%;
+    object-fit: contain;
+    object-position: center top;
+    height:30rem;
+    border-radius: 30px;
+    
+    }
+    .sidebar{
+        width: 34%;
+    }
+    .trailersection{
+        margin-left: 5px;
+    }
+    .sectionone {
+        width: 100%;
+    }
+    .sec2 {
+        margin: 10px 0px;
+    }
+    .toprated{
+    padding: 0px 0px;
+}
+    .paragraphs button{
+  padding: 5px;
+}
+}
