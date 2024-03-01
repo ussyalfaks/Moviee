@@ -68,12 +68,15 @@ function MovieCard({ movie, searchResults }) {
     </div>
     <div className="movie-title">{movie.title}</div>
     <div className="imdb-rating">
+
        <div className="imdb">
        	 <img 
        	  src={imdb}
        	  alt="IMDb" className="imdb-icon" />
         <span>{movie.vote_average} / 100</span>
        </div>
+
+
       <div className="tomato">
       	  <img 
       	 src={tomato} 
@@ -81,6 +84,8 @@ function MovieCard({ movie, searchResults }) {
       	className="tomato-icon" />
         <span>{movie.vote_average * 10}%</span>
       </div>
+
+
     </div>
 </div>
  </Link>
@@ -115,12 +120,12 @@ function MovieList({searchResults}) {
   return (
     <section className="layout">
      {isLoading ? (
-        <p className="loader"><MrMiyagi 
+        <div className="loader"><MrMiyagi 
         size={100}
         lineWeight={3.5}
         speed={1} 
         color="darkblue" 
-       /></p>
+       /></div>
       ) : (
         <div className="container-movie">
           {movies.map((movie) => (

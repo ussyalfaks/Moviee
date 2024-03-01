@@ -5,8 +5,8 @@ import Menu from './asset/images/Menu.png';
 import search from './asset/images/Search.png'; 
 import imdb from './asset/images/imdb.png'; 
 import tomato from './asset/images/tomato.png';
-import { ReactComponent as PlayIcon } from './asset/images/Play.svg'; 
-import { ReactComponent as Seemore } from './asset/images/seemore.svg'; 
+import Playicon  from './asset/images/play.svg'; 
+import Seemore from './asset/images/seemore.svg'; 
 import Footer from './components/footer';
 import MovieList from './components/Moviecard';
 
@@ -59,6 +59,23 @@ function MenuIcon() {
   );
 }
 
+function SeeMore() {
+  return (
+    <div>
+    <img className='play-img' src={Seemore}  alt="search SVG" />
+
+    </div>
+  );
+}
+
+function PlayIcon() {
+  return (
+    <div>
+    <img className='play-img' src={Playicon}  alt="search SVG" />
+
+    </div>
+  );
+}
 
 function Tomatoicon() {
   return (
@@ -173,7 +190,7 @@ function Home() {
       <div >
         <a href='#' className='seemore'>
         <p>See more</p>
-        <Seemore />
+        <SeeMore />
         </a>
       </div>
     </div>

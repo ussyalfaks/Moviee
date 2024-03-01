@@ -113,15 +113,6 @@ function Trailer() {
               <div className="overview">
                 <p>{movieDetails.overview}</p>
               </div>
-              <div className="crew">
-              {movieDetails.name && <p>Director: {movieDetails.director}</p>}
-
-                  {movieDetails.writer && <p>Writers: {movieDetails.writer}</p>}
-
-                  {movieDetails.credits && movieDetails.credits.cast && (
-                    <p>Stars: {movieDetails.credits.cast.slice(0, 3).map((actor) => actor.name).join(", ")}</p>
-                  )}
-              </div>
 
               <div className="toprated">
                 <span>Top rated movie #{movieDetails.vote_average}</span>
@@ -143,7 +134,7 @@ function Trailer() {
                   </div>
                 </div>
               </div>
-              <div className="showtime">
+              {/* <div className="showtime">
                 <button>
                   <img src={Ticket} alt="Clock Icon" width="20" height="20" />
                   See Showtimes
@@ -152,7 +143,7 @@ function Trailer() {
                   <img src={List} alt="Film Icon" width="16" height="16" />
                   More Watch Options
                 </button>
-              </div>
+              </div> */}
               <div className="monthshow">
                 {/* Display images or content related to the movie */}
                 </div>
