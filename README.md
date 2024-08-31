@@ -1,1 +1,1 @@
-## Movie Discovery App
+## Movie Discovery App.
